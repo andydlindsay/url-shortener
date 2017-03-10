@@ -59,13 +59,14 @@ app.get('/:shortened_url_id', function(req, res) {
         }).toArray(function(err, doc) {
             if (err) throw err;
             console.log(doc.original_url);
+            res.send(doc.original_url);
         });
         db.close();
     });
     
     // redirect the client or notify the user of db index not found
     
-    res.send(req.params.shortened_url_id);
+    // res.send(req.params.shortened_url_id);
 });
 
 app.get('*', function (req, res) {
