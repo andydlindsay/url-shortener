@@ -11,7 +11,7 @@
 #### `http://andydlindsay-url-shortener.herokuapp.com/new/http://www.example.com`
 #### `http://andydlindsay-url-shortener.herokuapp.com/new/https://www.example.com`
 #### Example creation output:
-#### `{ orginal_url: http://www.example.com, short_url: http://andydlindsay-url-shortener.herokuapp.com/58c32285734d1d465886cbb9 }`
+#### `{ original_url: http://www.example.com, short_url: http://andydlindsay-url-shortener.herokuapp.com/58c32285734d1d465886cbb9 }`
 #### Example usage:
 #### `http://andydlindsay-url-shortener.herokuapp.com/58c32285734d1d465886cbb9`
 #### Will redirect to:
