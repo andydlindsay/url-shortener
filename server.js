@@ -36,6 +36,7 @@ app.get(['/new/https://:url', '/new/http://:url'], function(req, res) {
         responseObj = {
            error: "URL must be in the valid http://www.example.com format." 
         };
+        res.send(responseObj);
     } else {
         // check if http:// or https:// submitted by looking at the 10th character in the request url
         // console.log(req.url[9] == 's');
