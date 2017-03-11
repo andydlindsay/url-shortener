@@ -5,13 +5,17 @@
 - If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.
 - When I visit that shortened URL, it will redirect me to my original link.
 
-#### App running on [heroku]()
+#### App running on [heroku](http://andydlindsay-url-shortener.herokuapp.com)
 
+#### Example creation usage:
+#### `http://andydlindsay-url-shortener.herokuapp.com/new/http://www.example.com`
+#### `http://andydlindsay-url-shortener.herokuapp.com/new/https://www.example.com`
+#### Example creation output:
+#### `{ orginal_url: http://www.example.com, short_url: http://andydlindsay-url-shortener.herokuapp.com/58c32285734d1d465886cbb9 }`
 #### Example usage:
-#### `https://andydlindsay-ts-microservice.herokuapp.com/February%2014,%201981`
-#### `https://andydlindsay-ts-microservice.herokuapp.com/350956800`
-#### Example output:
-#### `{ "unix": 350956800, "natural": "February 14, 1981" }`
+#### `http://andydlindsay-url-shortener.herokuapp.com/58c32285734d1d465886cbb9`
+#### Will redirect to:
+#### `http://www.example.com`
 
 ##### Check out my other projects:
 [Free Code Camp](https://www.freecodecamp.com/andydlindsay)  

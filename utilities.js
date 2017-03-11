@@ -17,6 +17,15 @@ module.exports = {
         } else {
             return true;
         }
+    },
+    
+    isHex: function(str) {
+        var pattern = /[0-9A-Fa-f]{24}/g;
+        if (pattern.test(str)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 };
